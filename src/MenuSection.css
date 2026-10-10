@@ -1,0 +1,42 @@
+.zomato-menu{background:#edf0e5;padding-top:72px;padding-bottom:72px}
+.brandmark{overflow:hidden}
+.brandmark img{display:block;width:100%;height:100%;object-fit:cover}
+.menu-panel{max-width:820px;margin:0 auto;padding:28px 34px 24px;background:#fffaf3;border:1px solid #e4d7c7;border-radius:5px;box-shadow:0 14px 35px #71482b12}
+.menu-panel-head{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:18px}
+.menu-panel-head small{color:#9a6c54;font-size:9px;font-weight:700;letter-spacing:1.6px}
+.menu-panel-head h2{margin:7px 0 0;color:#3c211c;font:600 31px/1.15 "Playfair Display",serif}
+.menu-panel-head>span{padding-bottom:3px;color:#927464;font-size:11px}
+.menu-category-list{list-style:none;margin:0;padding:0;border-top:1px solid #e8ddcf}
+.menu-category-row{min-height:68px;display:grid;grid-template-columns:52px minmax(0,1fr) auto;align-items:center;gap:15px;padding:7px 10px;border-bottom:1px solid #e8ddcf;transition:background .2s,transform .2s}
+.menu-category-row:hover{background:#fff3e5;transform:translateX(3px)}
+.menu-category-row img{display:block;width:52px;height:52px;object-fit:cover;border-radius:4px;background:#ead9c7}
+.menu-category-name{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#4b2a20}
+.menu-category-name b{font-size:13px;font-weight:600}
+.menu-category-name small{color:#927464;font-size:10px;white-space:nowrap}
+.menu-category-row>svg{color:#bc744a}
+.menu-zomato-button{min-height:46px;margin-top:20px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;background:#5c3025;color:#fff7ec;font-size:11px;font-weight:700;transition:background .2s,transform .2s}
+.menu-zomato-button:hover{background:#8b5637;transform:translateY(-2px)}
+.visitcard{transition:transform .24s,box-shadow .24s}
+.visitcard:hover{transform:translateY(-5px);box-shadow:0 25px 55px #71482b24}
+.visitcard .contact{padding:4px 6px;margin-left:-6px;margin-right:-6px;border-radius:4px;transition:background .2s,transform .2s}
+.visitcard .contact:hover{background:#f5e9d9;transform:translateX(3px)}
+.visitcard .contact a{transition:color .2s}
+.visitcard .contact a:hover{color:#bc744a}
+.visitcard .hours-title{align-items:center;margin:15px 0 8px;color:#5c3025;font-size:12px;font-weight:700}
+.visiting-hours{display:grid;gap:2px;margin:0 0 0 31px}
+.visiting-hours>div{display:grid;grid-template-columns:minmax(72px,1fr) max-content;align-items:center;gap:10px;padding:8px 6px;border-bottom:1px solid #ead9c7;color:#806456;font-size:11px;line-height:1.45}
+.visiting-hours dt,.visiting-hours dd{margin:0}
+.visiting-hours dd{color:#5c3025;font-weight:600;white-space:nowrap}
+@media(max-width:760px){
+  .zomato-menu{padding-top:50px;padding-bottom:50px}
+  .menu-panel{padding:22px 20px 19px}
+}
+@media(max-width:480px){
+  .menu-panel{padding:20px 14px 15px}
+  .menu-panel-head h2{font-size:26px}
+  .menu-category-row{grid-template-columns:46px minmax(0,1fr) auto;gap:11px;padding:7px 5px}
+  .menu-category-row img{width:46px;height:46px}
+  .menu-category-name{align-items:flex-start;flex-direction:column;gap:4px}
+  .menu-category-name b{font-size:12px}
+  .menu-category-name small{font-size:9px}
+}
